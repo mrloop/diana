@@ -1,139 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murals in a Country Inn</title>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 2rem 1rem; /* Added padding to body */
-            background: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto; /* Removed top/bottom margin, centered horizontally */
-            /* Removed padding, background, border-radius, box-shadow */
-        }
-        h1, h2 {
-            text-align: center;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-        h1 small {
-            font-size: 0.6em;
-            font-weight: normal;
-            font-style: italic;
-        }
-        p {
-            font-family: Georgia, "Times New Roman", Times, serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murals in a Country Inn</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem 1rem;
+      /* Added padding to body */
+      background: #f4f4f4;
+      color: #333;
+    }
 
-        .article-content p:first-of-type::first-letter {
-            font-size: 2.5em; /* Make it 2.5 times larger than the current font size */
-            font-weight: bold;
-            float: left;
-            line-height: 1; /* Adjust line height to prevent extra space */
-            margin-right: 0.1em; /* Space between the drop cap and the rest of the text */
-            /* You can add more styling here, e.g., color */
-        }
-        .sub-heading {
-            text-align: center;
-            font-style: italic;
-            font-size: 1.2em;
-            margin-bottom: 2rem;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1rem auto;
-            border-radius: 8px;
-        }
-        .article-meta {
-            text-align: center;
-            color: #666;
-            margin-bottom: 2rem;
-        }
-        figure {
-            margin: 1rem auto;
-            text-align: center;
-            break-inside: avoid; /* Prevents figures from breaking across columns */
-        }
-        figcaption {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 0.5rem;
-        }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      /* Removed top/bottom margin, centered horizontally */
+      /* Removed padding, background, border-radius, box-shadow */
+    }
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #222;
-                color: #eee;
-            }
-            .container {
-                /* Removed background and box-shadow */
-            }
-            .article-meta, figcaption {
-                color: #bbb;
-            }
-        }
+    h1,
+    h2 {
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
 
-        @media (min-width: 768px) {
-            .article-content {
-                column-count: 2;
-                column-gap: 2rem;
-            }
-        }
-    </style>
+    h1 small {
+      font-size: 0.6em;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .article-content p:first-of-type::first-letter {
+      font-size: 2.5em;
+      /* Make it 2.5 times larger than the current font size */
+      font-weight: bold;
+      float: left;
+      line-height: 1;
+      /* Adjust line height to prevent extra space */
+      margin-right: 0.1em;
+      /* Space between the drop cap and the rest of the text */
+      /* You can add more styling here, e.g., color */
+    }
+
+    .sub-heading {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2em;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 8px;
+    }
+
+    .article-meta {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    figure {
+      margin: 1rem auto;
+      text-align: center;
+      break-inside: avoid;
+      /* Prevents figures from breaking across columns */
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #222;
+        color: #eee;
+      }
+
+      .container {
+        /* Removed background and box-shadow */
+      }
+
+      .article-meta,
+      figcaption {
+        color: #bbb;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .article-content {
+        column-count: 2;
+        column-gap: 2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <main class="container">
-        <h1>Murals in a Country Inn <br><small>and Alison Downie meets the Artist</small></h1>
+  <main class="container">
+    <h1>Murals in a Country Inn <br><small>and Alison Downie meets the Artist</small></h1>
 
-        <figure>
-            <img src="image1.jpeg" alt="The artist in front of her lifelike painting of the fierce Rob Roy Macgregor.">
-            <figcaption>The artist in front of her lifelike painting of the fierce Rob Roy Macgregor.</figcaption>
-        </figure>
+    <figure>
+      <img src="rob_roy_macgregor.png"
+        alt="The artist in front of her lifelike painting of the fierce Rob Roy Macgregor.">
+      <figcaption>The artist in front of her lifelike painting of the fierce Rob Roy Macgregor.</figcaption>
+    </figure>
 
-        <div class="article-content">
+    <div class="article-content">
 
-        <p>MRS Diana Buchanan is a little slip of a woman, with pointed face, dark hair (going becomingly white) piled on top of her small head, and a gleam of ironic fun in her hazel eyes.</p>
+      <p>MRS Diana Buchanan is a little slip of a woman, with pointed face, dark hair (going becomingly white) piled on
+        top of her small head, and a gleam of ironic fun in her hazel eyes.</p>
 
-        <p>She is also an extremely able mural artist, as those who have visited the Pirn Inn, Balfron, will testify. For all round the walls of the lounge and bar in this small village inn are lively, prancing figures from Scotland's history, caricatures of "regular customers," and (over the fireplace in the bar) "mine host" himself, and his wife -Mr and Mrs Donald Kennedy depicted dancing a vigorous reel.</p>
+      <p>She is also an extremely able mural artist, as those who have visited the Pirn Inn, Balfron, will testify. For
+        all round the walls of the lounge and bar in this small village inn are lively, prancing figures from Scotland's
+        history, caricatures of "regular customers," and (over the fireplace in the bar) "mine host" himself, and his
+        wife -Mr and Mrs Donald Kennedy depicted dancing a vigorous reel.</p>
 
-        <h2>Contrast</h2>
-        <p>"Have you done much of this mural painting?" I asked Mrs Buchanan when we met at the inn the other day.</p>
-        <p>"Oh, yes-I've done quite a bit," she replied.</p>
-        <p>"Where?" said I.</p>
-        <p>"Churches, mostly," said Mrs Buchanan, demure as you like, but with an amused glint in her eye.</p>
-        <p><strong>"This was quite a change from painting angels," she added meditatively, looking across at the ferocious Rob Roy, brandishing his sword on the wall by the window, while his marauding pals round up the cattle in the meadows beside Loch Lomond in the background.</strong></p>
+      <h2>Contrast</h2>
+      <p>"Have you done much of this mural painting?" I asked Mrs Buchanan when we met at the inn the other day.</p>
+      <p>"Oh, yes-I've done quite a bit," she replied.</p>
+      <p>"Where?" said I.</p>
+      <p>"Churches, mostly," said Mrs Buchanan, demure as you like, but with an amused glint in her eye.</p>
+      <p><strong>"This was quite a change from painting angels," she added meditatively, looking across at the ferocious
+          Rob Roy, brandishing his sword on the wall by the window, while his marauding pals round up the cattle in the
+          meadows beside Loch Lomond in the background.</strong></p>
 
-        <p>"Some people complain because he isn't more like Richard Todd." she added, the glint now a full-scale grin. "But his tartan's authentic, anyway. All the tartans are. I studied them carefully on Mclan's prints before I painted any of them." (Incidentally, the artist herself is English: she comes from Leicester).</p>
-        <p>On the other side of the room William Wallace flourishes his sword, and near him is Robert the Bruce, complete with cave and spider, one mailed foot symbolically crushing an English rose.</p>
+      <p>"Some people complain because he isn't more like Richard Todd." she added, the glint now a full-scale grin.
+        "But his tartan's authentic, anyway. All the tartans are. I studied them carefully on Mclan's prints before I
+        painted any of them." (Incidentally, the artist herself is English: she comes from Leicester).</p>
+      <p>On the other side of the room William Wallace flourishes his sword, and near him is Robert the Bruce, complete
+        with cave and spider, one mailed foot symbolically crushing an English rose.</p>
 
-        <h2>Pipes to Hold</h2>
-        <p>The longest wall of the lounge is taken up by a spirited rendering of Bonnie Prince Charlie, plus followers, putting to rout a number of scared-looking English soldiers.</p>
-        <p>There is also a wandering Highland tinker playing the bagpipes- "A real tinker happened to come in while I was painting that one. Mrs Buchanan told me, "and he let me hold his pipes for a bit to get the feel of them. It's always so much easier to paint something you've done yourself."</p>
+      <h2>Pipes to Hold</h2>
+      <p>The longest wall of the lounge is taken up by a spirited rendering of Bonnie Prince Charlie, plus followers,
+        putting to rout a number of scared-looking English soldiers.</p>
+      <p>There is also a wandering Highland tinker playing the bagpipes- "A real tinker happened to come in while I was
+        painting that one. Mrs Buchanan told me, "and he let me hold his pipes for a bit to get the feel of them. It's
+        always so much easier to paint something you've done yourself."</p>
 
-        <p><strong>She began her career as an artist at 16, she told me, with classes in sculpture, and changed to painting later.</strong></p>
-        <p>"But I always preferred figures to landscapes, and still do," Mrs Buchanan added.</p>
+      <p><strong>She began her career as an artist at 16, she told me, with classes in sculpture, and changed to
+          painting later.</strong></p>
+      <p>"But I always preferred figures to landscapes, and still do," Mrs Buchanan added.</p>
 
-        <p>During the war she gave up painting altogether and became a driver instead. And then, having married a Scotsman, she came North. She and her husband, Mr Robert Buchanan, have lived in Balfron for the past nine years.</p>
-        <p>Working spasmodically ("I have three children to look after, you see. And then there are the dogs-three lurchers"), it took Mrs Buchanan about a month to paint the walls of the lounge, and rather longer to paint the bar ("too many interruptions" she said, smiling).</p>
-        <p>She worked in flat oil paint on the distemper background, using trestles to reach the higher portions of the walls.</p>
+      <p>During the war she gave up painting altogether and became a driver instead. And then, having married a
+        Scotsman, she came North. She and her husband, Mr Robert Buchanan, have lived in Balfron for the past nine
+        years.</p>
+      <p>Working spasmodically ("I have three children to look after, you see. And then there are the dogs-three
+        lurchers"), it took Mrs Buchanan about a month to paint the walls of the lounge, and rather longer to paint the
+        bar ("too many interruptions" she said, smiling).</p>
+      <p>She worked in flat oil paint on the distemper background, using trestles to reach the higher portions of the
+        walls.</p>
 
-        <h2>Coats Of Arms</h2>
-        <p>Above the doors of the lounge and bar the artist has painted the coats of arms of Mr Kennedy and his wife (she was a Macallum).</p>
-        <p>The Kennedy tartan, too, appears as window curtains, framing the charming view of the river Endrick and the hills beyond which this little high-set inn commands.</p>
-        <p>Its name, incidentally, is a reminder of the days when there were cotton mills at Balfron-"Pirn" being, of course, a bobbin. Now, however, even the ruins of the mill by the river are gone, and only some of the names of the streets ("Spinners Street" for instance) remain as a reminder of this past industry.</p>
+      <h2>Coats Of Arms</h2>
+      <p>Above the doors of the lounge and bar the artist has painted the coats of arms of Mr Kennedy and his wife (she
+        was a Macallum).</p>
+      <p>The Kennedy tartan, too, appears as window curtains, framing the charming view of the river Endrick and the
+        hills beyond which this little high-set inn commands.</p>
+      <p>Its name, incidentally, is a reminder of the days when there were cotton mills at Balfron-"Pirn" being, of
+        course, a bobbin. Now, however, even the ruins of the mill by the river are gone, and only some of the names of
+        the streets ("Spinners Street" for instance) remain as a reminder of this past industry.</p>
     </div>
-        <figure>
-            <img src="image2.jpeg" alt="Mrs Buchanan and Donald Kennedy enjoy a joke in the lounge, with bonnie Prince Charlie on a rearing white charger in the background.">
-            <figcaption>Mrs Buchanan and Donald Kennedy enjoy a joke in the lounge, with bonnie Prince Charlie on a rearing white charger in the background.</figcaption>
-        </figure>
-    </main>
+    <figure>
+      <img src="mrs_buchanan_and_donald_kennedy.png"
+        alt="Mrs Buchanan and Donald Kennedy enjoy a joke in the lounge, with bonnie Prince Charlie on a rearing white charger in the background.">
+      <figcaption>Mrs Buchanan and Donald Kennedy enjoy a joke in the lounge, with bonnie Prince Charlie on a rearing
+        white charger in the background.</figcaption>
+    </figure>
+  </main>
 </body>
+
 </html>
